@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_fridge">
+
+    <fragment
+        android:id="@+id/navigation_fridge"
+        android:name="com.example.myapplication.ui.fridge.FridgeFragment"
+        android:label="@string/title_fridge"
+        tools:layout="@layout/fragment_fridge" />
+
+    <fragment
+        android:id="@+id/navigation_shoppinglist"
+        android:name="com.example.myapplication.ui.shoppinglist.ShoppingListFragment"
+        android:label="@string/title_shopping_list"
+        tools:layout="@layout/fragment_shoppinglist" />
+
+    <fragment
+        android:id="@+id/navigation_suggestion"
+        android:name="com.example.myapplication.ui.suggestion.SuggestionFragment"
+        android:label="@string/title_suggestion"
+        tools:layout="@layout/fragment_suggestion" />
+    <fragment
+        android:id="@+id/navigation_recipes"
+        android:name="com.example.myapplication.ui.recipes.RecipesFragment"
+        android:label="@string/title_recipes"
+        tools:layout="@layout/fragment_recipes" />
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.myapplication.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
